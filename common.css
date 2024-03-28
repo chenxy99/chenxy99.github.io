@@ -352,3 +352,7 @@ table.imgtable, table.imgtable td {
 .text-bold {
 	font-weight: bold;
 }
+
+li:not(:last-child) {
+    margin-bottom: 8px;
+}
