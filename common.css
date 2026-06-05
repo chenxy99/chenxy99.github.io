@@ -625,8 +625,9 @@ li {
     color: var(--accent-green);
 }
 
-/* ===== CLUSTRMAPS ===== */
-#clustrmaps-widget { text-align: center; margin: 0 auto; }
+/* ===== VISITOR MAP (MapMyVisitors) ===== */
+#clustrmaps-widget { max-width: 260px; margin: 0 auto; text-align: center; }
+#clustrmaps-widget .mmvst_outer { max-width: 100%; }
 
 /* ===== SCROLLBAR ===== */
 ::-webkit-scrollbar { width: 6px; }
