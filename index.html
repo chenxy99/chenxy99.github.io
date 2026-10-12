@@ -1,575 +1,310 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="Xianyu Chen">
-    <meta name="description" content="Xianyu Chen's home page">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="common.css" type="text/css">
-    <title>Xianyu Chen</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Xianyu Chen · AI Research Scientist</title>
+<meta name="description" content="Xianyu Chen, AI Research Scientist at Fasikl. His dissertation on human visual attention for multimodal AI won UMN&#x27;s 2026 Distinguished Dissertation Award.">
+<link rel="canonical" href="https://chenxy99.github.io/">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#F8F9FB" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0B0F17" media="(prefers-color-scheme: dark)">
+<script>(function(d){d.classList.add('js');try{var t=localStorage.getItem('theme');if(t==='light'||t==='dark'){d.setAttribute('data-theme',t);var c=t==='dark'?'#0B0F17':'#F8F9FB',m=document.querySelectorAll('meta[name="theme-color"]');for(var i=0;i<m.length;i++)m[i].setAttribute('content',c);}}catch(e){}})(document.documentElement);</script>
+<link rel="preload" href="assets/fonts/geist-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/geist-mono-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/site.css">
+<link rel="icon" href="assets/img/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<meta property="og:site_name" content="Xianyu Chen">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Xianyu Chen · AI Research Scientist">
+<meta property="og:description" content="Multimodal AI grounded in human visual attention · ECCV 2024 Oral · 2026 UMN Distinguished Dissertation Award">
+<meta property="og:url" content="https://chenxy99.github.io/">
+<meta property="og:image" content="https://chenxy99.github.io/assets/img/og-1200x630.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Xianyu Chen, AI Research Scientist at Fasikl; 2026 Distinguished Dissertation Award, University of Minnesota">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Xianyu Chen · AI Research Scientist">
+<meta name="twitter:description" content="Multimodal AI grounded in human visual attention · ECCV 2024 Oral · 2026 UMN Distinguished Dissertation Award">
+<meta name="twitter:image" content="https://chenxy99.github.io/assets/img/og-1200x630.jpg">
+<meta name="twitter:image:alt" content="Xianyu Chen, AI Research Scientist at Fasikl; 2026 Distinguished Dissertation Award, University of Minnesota">
+<meta property="profile:first_name" content="Xianyu">
+<meta property="profile:last_name" content="Chen">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  "@id": "https://chenxy99.github.io/#profile",
+  "url": "https://chenxy99.github.io/",
+  "name": "Xianyu Chen · AI Research Scientist",
+  "dateModified": "2026-10-11",
+  "mainEntity": {
+    "@type": "Person",
+    "@id": "https://chenxy99.github.io/#person",
+    "name": "Xianyu Chen",
+    "honorificSuffix": "Ph.D.",
+    "url": "https://chenxy99.github.io/",
+    "image": "https://chenxy99.github.io/assets/img/portrait-560.jpg",
+    "email": "mailto:xianyuchen1992\u0040gmail.com",
+    "jobTitle": "Research Scientist – AI",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Fasikl Inc.",
+      "url": "https://www.fasikl.com/"
+    },
+    "alumniOf": [
+      {
+        "@type": "CollegeOrUniversity",
+        "name": "University of Minnesota, Twin Cities"
+      },
+      {
+        "@type": "CollegeOrUniversity",
+        "name": "Sun Yat-sen University"
+      }
+    ],
+    "award": [
+      "Distinguished Dissertation Award, University of Minnesota Graduate School (Mathematics, Physical Sciences & Engineering), 2026",
+      "Outstanding Reviewer, CVPR 2026",
+      "Outstanding Reviewer, WACV 2025",
+      "College of Science and Engineering Graduate Fellowship, University of Minnesota, 2019, 2020",
+      "National Scholarship, Ministry of Education of China, 2013, 2017"
+    ],
+    "knowsAbout": [
+      "Multimodal AI",
+      "Human visual attention",
+      "Scanpath prediction",
+      "Vision and language",
+      "Explainable AI",
+      "Computer vision",
+      "Deep learning for neural signals"
+    ],
+    "sameAs": [
+      "https://scholar.google.com/citations?user=gjH1-CcAAAAJ&hl=en",
+      "https://www.semanticscholar.org/author/3392059",
+      "https://orcid.org/0000-0002-9027-3920",
+      "https://github.com/chenxy99",
+      "https://www.linkedin.com/in/xianyu-chen-a27354163/"
+    ]
+  }
+}
+</script>
+<script src="assets/js/site.js" defer></script>
 </head>
 <body>
-
-<div class="bg-dots"></div>
-
-<nav id="navbar">
-    <div class="nav-brand"><span class="nav-accent">&gt;</span> Xianyu Chen</div>
-    <div class="nav-links">
-        <a href="#biography">About</a>
-        <a href="#news">News</a>
-        <a href="#Selected-Works">Research</a>
-        <a href="#skills">Skills</a>
-        <a href="#academic-services">Services</a>
+<a class="skip" href="#main">Skip to content</a>
+<header class="bar">
+  <div class="wrap bar-in">
+    <a class="brand" href="./" aria-current="page"><svg class="mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path class="mk-line" d="M9.5 18.7 27 9.2"/><circle class="mk-a" cx="9.5" cy="18.7" r="6.75"/><circle class="mk-b" cx="27" cy="9.2" r="4"/></svg><span>Xianyu Chen</span></a>
+    <nav class="nav" aria-label="Main"><a href="#research">Research</a><a href="publications.html">Publications</a><a href="#experience">Experience</a><a href="dissertation.html">Dissertation</a><a href="cv_Xianyu.pdf">CV<span class="vh"> (PDF)</span></a><a href="#contact">Contact</a></nav>
+    <div class="bar-actions">
+      <button class="icon-btn theme-toggle" type="button" aria-label="Switch color theme"><svg class="i i-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg><svg class="i i-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></button>
+      <details class="menu">
+        <summary class="icon-btn"><span class="vh">Menu</span><svg class="i i-menu" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 7h16M4 12h16M4 17h16"/></svg><svg class="i i-close" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6 6 18"/></svg></summary>
+        <nav class="menu-panel" aria-label="Site menu"><a href="#research">Research</a><a href="publications.html">Publications</a><a href="#experience">Experience</a><a href="dissertation.html">Dissertation</a><a href="cv_Xianyu.pdf">CV<span class="vh"> (PDF)</span></a><a href="#contact">Contact</a></nav>
+      </details>
     </div>
-</nav>
-
-<div id="layout-content">
-
-    <!-- Profile Section -->
-    <section id="profile-section">
-        <div id="profile-info">
-            <div id="title-name">
-                <h1>Xianyu Chen<span class="cursor">_</span></h1>
-                <div class="title-badge">Ph.D. &middot; Computer Vision &amp; AI Researcher</div>
-            </div>
-            <div id="contact-address">
-                <p class="contact-line">
-                    <span class="label">// affiliation</span><br>
-                    Department of Computer Science and Engineering<br>
-                    University of Minnesota Twin Cities
-                </p>
-                <p class="contact-line">
-                    <span class="label">// location</span><br>
-                    Office: Keller 6-240
-                </p>
-                <p class="contact-line">
-                    <span class="label">// contact</span><br>
-                    Email: chen6582[AT]umn[DOT]edu
-                </p>
-            </div>
-            <div id="social-links">
-                <a href="https://scholar.google.com/citations?hl=en&user=gjH1-CcAAAAJ" target="_blank" class="social-btn">
-                    <img src="./pic/google_scholar.png" height="20px"> Scholar
-                </a>
-                <a href="https://www.semanticscholar.org/author/3392059" target="_blank" class="social-btn">
-                    <img src="./pic/semantic_scholar.png" height="20px"> Semantic
-                </a>
-                <a href="https://github.com/chenxy99" target="_blank" class="social-btn">
-                    <img src="./pic/github_s.jpg" height="20px"> GitHub
-                </a>
-                <a href="https://www.linkedin.com/in/xianyu-chen-a27354163/" target="_blank" class="social-btn">
-                    <img src="./pic/linkedin.png" height="20px"> LinkedIn
-                </a>
-            </div>
+  </div>
+</header>
+<main id="main">
+<section class="hero" aria-labelledby="name">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div class="hero-id">
+        <h1 id="name">Xianyu Chen</h1>
+      </div>
+      <div class="portrait"><picture><source type="image/avif" srcset="assets/img/portrait-280.avif 280w, assets/img/portrait-560.avif 560w" sizes="(max-width: 719px) 88px, (max-width: 1023px) 220px, 260px"><source type="image/webp" srcset="assets/img/portrait-280.webp 280w, assets/img/portrait-560.webp 560w" sizes="(max-width: 719px) 88px, (max-width: 1023px) 220px, 260px"><img src="assets/img/portrait-560.jpg" srcset="assets/img/portrait-280.jpg 280w, assets/img/portrait-560.jpg 560w" sizes="(max-width: 719px) 88px, (max-width: 1023px) 220px, 260px" width="560" height="560" alt="Portrait of Xianyu Chen" fetchpriority="high" decoding="async"></picture></div>
+      <div class="hero-body">
+        <p class="deck">My research makes multimodal AI reason and explain more like people, by learning from where humans look.</p>
+        <p class="meta">AI Research Scientist at <a href="https://www.fasikl.com/">Fasikl</a>, a NeuroAI company, where I develop deep learning for peripheral neural signals. Ph.D. in Computer Science, University of Minnesota (2025), with papers at ECCV&nbsp;(Oral), CVPR and IEEE&nbsp;TPAMI.</p>
+        <div class="actions">
+          <div class="grp">
+            <a class="btn btn-primary" href="cv_Xianyu.pdf"><svg class="i i-doc" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h4"/></svg>CV<span class="vh"> (PDF)</span></a>
+            <a class="btn" href="resume_Xianyu.pdf"><svg class="i i-doc" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h4"/></svg>Résumé<span class="vh"> (PDF)</span></a>
+            <a class="btn" href="mailto:xianyuchen1992&#64;gmail.com"><svg class="i i-mail" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg>Email</a>
+          </div>
+          <div class="grp">
+            <a class="btn" href="https://scholar.google.com/citations?user=gjH1-CcAAAAJ&amp;hl=en">Google Scholar</a>
+            <a class="btn" href="https://github.com/chenxy99">GitHub</a>
+          </div>
         </div>
-        <div id="profile-photo">
-            <div class="photo-wrapper">
-                <img src="./img/Xianyu_Chen.png" alt="Xianyu Chen">
-                <div class="photo-glow"></div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Biography -->
-    <section id="biography" class="section-card">
-        <h2 class="section-title">
-            <span class="section-num">01.</span> Biography
-            <div class="section-links">
-                <a href="/resume_Xianyu.pdf" target="_blank" class="doc-link">[Resume]</a>
-                <a href="/cv_Xianyu.pdf" target="_blank" class="doc-link">[CV]</a>
-            </div>
-        </h2>
-        <p>
-            I obtained my PhD degree from the Department of Computer Science and Engineering,
-            <a href="https://twin-cities.umn.edu">University of Minnesota - Twin Cities</a>,
-            advised by Prof. <a href="https://www-users.cs.umn.edu/~qzhao/index.html">Catherine Qi Zhao</a> in 2025 fall.
-            My research interests include vision &amp; language, human attention and few-shot learning,
-            with the goal of developing human-centered AI systems.
-        </p>
-        <p>
-            I used to be an intern in Multimedia Research Center,
-            <a href="http://english.siat.cas.cn/">Shenzhen Institutes of Advanced Technology Chinese Academy of Sciences</a>
-            supervised by Prof. <a href="https://scholar.google.com/citations?hl=en&user=XkjyyfoAAAAJ&view_op=list_works&sortby=pubdate">Yali Wang</a>
-            and Prof. <a href="http://mmlab.siat.ac.cn/yuqiao/">Yu Qiao</a> from August 2018 to January 2019.
-            I focus on object detection, especially, low shots detection and life-long learning.
-        </p>
-        <p>
-            I have graduated and gotten my master degree in July 2018 in
-            <a href="http://seit.sysu.edu.cn/">School of Electronics and Information Technology</a>,
-            <a href="http://www.sysu.edu.cn/2012/en/index.htm">Sun Yat-sen University</a>,
-            supervised by Prof. <a href="http://www.wcomms.com/home-en/team-en.html">Ming Jiang</a>.
-            Previously, I received the B. Eng degree from School of Information Science and Technology
-            in Sun Yat-sen University in 2015, under the supervision of Prof. Ming Jiang.
-        </p>
-    </section>
-
-    <!-- News -->
-    <section id="news" class="section-card">
-        <h2 class="section-title"><span class="section-num">02.</span> News</h2>
-        <div class="timeline">
-            <div class="timeline-item highlight">
-                <span class="timeline-date">05/2026</span>
-                <span class="timeline-content">I am honored to receive the <strong>Distinguished Dissertation Award</strong> in the Mathematics, Physical Sciences, and Engineering category! Many thanks to my advisor Prof. Catherine Zhao and all my collaborators. <a href="https://grad.umn.edu/news-events/news-overview/announcing-2026-graduate-school-best-dissertation-award-winners" target="_blank" class="pub-link">[News]</a> <a href="https://cse.umn.edu/cs/news/xianyu-chen-earns-distinguished-dissertation-award" target="_blank" class="pub-link">[News]</a></span>
-            </div>
-            <div class="timeline-item">
-                <span class="timeline-date">09/2025</span>
-                <span class="timeline-content">I passed my final doctoral defense! Thanks everyone.</span>
-            </div>
-            <div class="timeline-item">
-                <span class="timeline-date">08/2024</span>
-                <span class="timeline-content">Our GazeXplain was selected as an <strong>oral paper</strong> by ECCV 2024! Thanks Ming and Qi.</span>
-            </div>
-            <div class="timeline-item">
-                <span class="timeline-date">07/2024</span>
-                <span class="timeline-content">Our paper was accepted by ECCV 2024! Thanks Ming and Qi.</span>
-            </div>
-            <div class="timeline-item">
-                <span class="timeline-date">02/2024</span>
-                <span class="timeline-content">Our paper was accepted by CVPR 2024! Thanks Ming and Qi.</span>
-            </div>
-            <div class="timeline-item">
-                <span class="timeline-date">01/2024</span>
-                <span class="timeline-content">Our paper was accepted by TPAMI (Impact Factor: 23.6)! Thanks James, Ming, Shi, Louis and Qi.</span>
-            </div>
-            <div class="timeline-item">
-                <span class="timeline-date">03/2022</span>
-                <span class="timeline-content">Our paper was accepted by CVPR 2022! Thanks James, Ming, Shi, Louis and Qi.</span>
-            </div>
-            <div class="timeline-item">
-                <span class="timeline-date">04/2021</span>
-                <span class="timeline-content">Our paper was accepted by IJCAI 2021! Thanks Qi and Ming.</span>
-            </div>
-            <div class="timeline-item">
-                <span class="timeline-date">03/2021</span>
-                <span class="timeline-content">Our paper was accepted by CVPR 2021! Thanks Qi and Ming.</span>
-            </div>
-            <div class="timeline-item">
-                <span class="timeline-date">08/2019</span>
-                <span class="timeline-content">Finish my two-month internship at Tencent AI Lab.</span>
-            </div>
-            <div class="timeline-item">
-                <span class="timeline-date">02/2019</span>
-                <span class="timeline-content">I am happy to accept the Ph.D. offer from University of Minnesota - Twin Cities and awarded a two year CSE Graduate Fellowship!</span>
-            </div>
-        </div>
-    </section>
-
-    <!-- Selected Publications -->
-    <section id="Selected-Works" class="section-card">
-        <h2 class="section-title">
-            <span class="section-num">03.</span> Selected Publication
-            <div class="section-links">
-                <a href="https://scholar.google.com/citations?hl=en&user=gjH1-CcAAAAJ" target="_blank" class="doc-link">[Google Scholar]</a>
-            </div>
-        </h2>
-
-        <div class="pub-group">
-            <h3 class="pub-group-title">Understanding and Solving the Real World Tasks</h3>
-            <ol class="pub-list">
-                <li class="pub-item">
-                    <div class="pub-badges">
-                        <span class="badge badge-journal">TPAMI 2024</span>
-                    </div>
-                    <div class="pub-content">
-                        <span class="text-bold">Xianyu Chen</span>, Jinhui Yang, Shi Chen, Louis Wang, Ming Jiang, and Qi Zhao,
-                        "<a href="https://ieeexplore.ieee.org/abstract/document/10412655/">Every Problem, Every Step, All In Focus: Learning to Solve Real-World Problems with Integrated Attention</a>"
-                        <em>IEEE Transactions on Pattern Analysis and Machine Intelligence</em>, Jan. 2024.
-                        <div class="pub-links">
-                            <a href="paper/TPAMI_2024_VisualHow.pdf" target="_blank" class="pub-link">[Paper]</a>
-                            <a href="https://github.com/chenxy99/SGAN" target="_blank" class="pub-link">[Code]</a>
-                        </div>
-                    </div>
-                </li>
-                <li class="pub-item">
-                    <div class="pub-badges">
-                        <span class="badge badge-conf">CVPR 2022</span>
-                    </div>
-                    <div class="pub-content">
-                        Jinhui Yang*, <span class="text-bold">Xianyu Chen</span>*, Ming Jiang, Shi Chen, Louis Wang and Qi Zhao,
-                        "<a href="https://openaccess.thecvf.com/content/CVPR2022/html/Yang_VisualHow_Multimodal_Problem_Solving_CVPR_2022_paper.html" target="_blank">VisualHow: Multimodal Problem Solving</a>"
-                        <em>Proceedings of the 2022 IEEE Conference on Computer Vision and Pattern Recognition (CVPR 2022)</em>.
-                        (*Co-first authors/Equal contribution)
-                        <div class="pub-links">
-                            <a href="https://www-users.cse.umn.edu/~qzhao/visualhow.html" target="_blank" class="pub-link">[Project Page]</a>
-                            <a href="https://openaccess.thecvf.com/content/CVPR2022/papers/Yang_VisualHow_Multimodal_Problem_Solving_CVPR_2022_paper.pdf" target="_blank" class="pub-link">[Paper]</a>
-                            <a href="https://github.com/formidify/VisualHow" target="_blank" class="pub-link">[Code]</a>
-                        </div>
-                    </div>
-                </li>
-            </ol>
-        </div>
-
-        <div class="pub-group">
-            <h3 class="pub-group-title">Understanding Human Attention in Performing General Tasks</h3>
-            <ol class="pub-list">
-                <li class="pub-item">
-                    <div class="pub-badges">
-                        <span class="badge badge-conf">ECCV 2024</span>
-                        <span class="badge badge-oral">Oral 2.3%</span>
-                    </div>
-                    <div class="pub-content">
-                        <span class="text-bold">Xianyu Chen</span>, Ming Jiang and Qi Zhao,
-                        "GazeXplain: Learning to Predict Natural Language Explanations of Visual Scanpaths"
-                        <em>Proceedings of the 2024 European Conference on Computer Vision (ECCV 2024)</em>.
-                        <div class="pub-links">
-                            <a href="https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/01308.pdf" target="_blank" class="pub-link">[Paper]</a>
-                            <a href="https://github.com/chenxy99/GazeXplain" target="_blank" class="pub-link">[Code]</a>
-                            <a href="https://www.youtube.com/watch?v=kTv-dDUBOd8" target="_blank" class="pub-link">[Video]</a>
-                        </div>
-                    </div>
-                </li>
-                <li class="pub-item">
-                    <div class="pub-badges">
-                        <span class="badge badge-conf">CVPR 2024</span>
-                    </div>
-                    <div class="pub-content">
-                        <span class="text-bold">Xianyu Chen</span>, Ming Jiang and Qi Zhao,
-                        "<a href="https://openaccess.thecvf.com//content/CVPR2024/html/Chen_Beyond_Average_Individualized_Visual_Scanpath_Prediction_CVPR_2024_paper.html" target="_blank">Beyond Average: Individualized Visual Scanpath Prediction</a>"
-                        <em>Proceedings of the 2024 IEEE Conference on Computer Vision and Pattern Recognition (CVPR 2024)</em>.
-                        <div class="pub-links">
-                            <a href="https://openaccess.thecvf.com/content/CVPR2024/papers/Chen_Beyond_Average_Individualized_Visual_Scanpath_Prediction_CVPR_2024_paper.pdf" target="_blank" class="pub-link">[Paper]</a>
-                            <a href="https://github.com/chenxy99/IndividualScanpath" target="_blank" class="pub-link">[Code]</a>
-                            <a href="https://www.youtube.com/watch?v=6-TZbsV8Qig" target="_blank" class="pub-link">[Video]</a>
-                        </div>
-                    </div>
-                </li>
-                <li class="pub-item">
-                    <div class="pub-badges">
-                        <span class="badge badge-conf">CVPR 2021</span>
-                    </div>
-                    <div class="pub-content">
-                        <span class="text-bold">Xianyu Chen</span>, Ming Jiang and Qi Zhao,
-                        "<a href="https://openaccess.thecvf.com/content/CVPR2021/html/Chen_Predicting_Human_Scanpaths_in_Visual_Question_Answering_CVPR_2021_paper.html" target="_blank">Predicting Human Scanpaths in Visual Question Answering</a>"
-                        <em>Proceedings of the 2021 IEEE Conference on Computer Vision and Pattern Recognition (CVPR 2021)</em>.
-                        <div class="pub-links">
-                            <a href="https://www-users.cse.umn.edu/~qzhao/cvpr2021scanpath.html" target="_blank" class="pub-link">[Project Page]</a>
-                            <a href="https://openaccess.thecvf.com/content/CVPR2021/papers/Chen_Predicting_Human_Scanpaths_in_Visual_Question_Answering_CVPR_2021_paper.pdf" target="_blank" class="pub-link">[Paper]</a>
-                            <a href="https://github.com/chenxy99/Scanpaths" target="_blank" class="pub-link">[Code]</a>
-                            <a href="https://www.youtube.com/watch?v=R4peha2NTgk" target="_blank" class="pub-link">[Video]</a>
-                        </div>
-                    </div>
-                </li>
-                <li class="pub-item">
-                    <div class="pub-badges">
-                        <span class="badge badge-conf">IJCAI 2021</span>
-                    </div>
-                    <div class="pub-content">
-                        <span class="text-bold">Xianyu Chen</span>, Ming Jiang and Qi Zhao,
-                        "<a href="https://www.ijcai.org/proceedings/2021/0086.pdf" target="_blank">Leveraging Human Attention in Novel Object Captioning</a>"
-                        <em>Proceedings of the 2021 International Joint Conference on Artificial Intelligence (IJCAI 2021)</em>.
-                        <div class="pub-links">
-                            <a href="https://www.ijcai.org/proceedings/2021/0086.pdf" target="_blank" class="pub-link">[Paper]</a>
-                            <a href="https://github.com/chenxy99/ANOC" target="_blank" class="pub-link">[Code]</a>
-                            <a href="https://www.youtube.com/watch?v=hlmRhEYQ0ws" target="_blank" class="pub-link">[2min Video]</a>
-                            <a href="https://www.youtube.com/watch?v=k5V5tR0mYvk&t" target="_blank" class="pub-link">[15min Video]</a>
-                        </div>
-                    </div>
-                </li>
-            </ol>
-        </div>
-
-        <div class="pub-group">
-            <h3 class="pub-group-title">Applications Related to Few-Shot Learning</h3>
-            <ol class="pub-list">
-                <li class="pub-item">
-                    <div class="pub-badges">
-                        <span class="badge badge-conf">WACV 2021</span>
-                    </div>
-                    <div class="pub-content">
-                        <span class="text-bold">Xianyu Chen</span>, Ming Jiang and Qi Zhao,
-                        "<a href="https://openaccess.thecvf.com/content/WACV2021/html/Chen_Self-Distillation_for_Few-Shot_Image_Captioning_WACV_2021_paper.html">Self-Distillation for Few-Shot Image Captioning</a>"
-                        <em>Proceedings of the 2021 IEEE Winter Conference on Applications of Computer Vision (WACV 2021)</em>.
-                        <div class="pub-links">
-                            <a href="https://openaccess.thecvf.com/content/WACV2021/papers/Chen_Self-Distillation_for_Few-Shot_Image_Captioning_WACV_2021_paper.pdf" target="_blank" class="pub-link">[Paper]</a>
-                            <a href="https://github.com/chenxy99/SD-FSIC" target="_blank" class="pub-link">[Code]</a>
-                            <a href="https://www.youtube.com/watch?v=FisaDeFjr0E" target="_blank" class="pub-link">[Video]</a>
-                        </div>
-                    </div>
-                </li>
-                <li class="pub-item">
-                    <div class="pub-badges">
-                        <span class="badge badge-conf">AAAI 2020</span>
-                    </div>
-                    <div class="pub-content">
-                        Ze Yang, Yali Wang, <span class="text-bold">Xianyu Chen</span>, Jianzhuang Liu and Yu Qiao,
-                        "<a href="https://ojs.aaai.org/index.php/AAAI/article/view/6957">Context-transformer: tackling object confusion for few-shot detection</a>"
-                        <em>The Thirty-Fourth AAAI Conference on Artificial Intelligence (AAAI 2020)</em>.
-                        <div class="pub-links">
-                            <a href="https://arxiv.org/abs/2003.07304" target="_blank" class="pub-link">[PDF]</a>
-                        </div>
-                    </div>
-                </li>
-                <li class="pub-item">
-                    <div class="pub-badges">
-                        <span class="badge badge-journal">TIP 2020</span>
-                    </div>
-                    <div class="pub-content">
-                        <span class="text-bold">Xianyu Chen</span>, Yali Wang, Jianzhuang Liu and Yu Qiao,
-                        "<a href="https://ieeexplore.ieee.org/abstract/document/9136838/">DID: Disentangling-Imprinting-Distilling for Continuous Low-Shot Detection</a>"
-                        <em>IEEE Transactions on Image Processing</em>, vol. 29, pp. 7765-7778, July 2020.
-                    </div>
-                </li>
-                <li class="pub-item">
-                    <div class="pub-badges">
-                        <span class="badge badge-preprint">Preprint</span>
-                    </div>
-                    <div class="pub-content">
-                        <span class="text-bold">Xianyu Chen</span>, Ming Jiang, and Qi Zhao,
-                        "<a href="https://arxiv.org/abs/2007.12104">Leveraging Bottom-Up and Top-Down Attention for Few-Shot Object Detection</a>"
-                        <em>Arxiv</em> 2020.
-                    </div>
-                </li>
-            </ol>
-        </div>
-
-        <div class="pub-group">
-            <h3 class="pub-group-title">Channel Estimation in Visible Light Communication and Wireless Communication</h3>
-            <ol class="pub-list">
-                <li class="pub-item">
-                    <div class="pub-badges">
-                        <span class="badge badge-journal">WCL 2019</span>
-                    </div>
-                    <div class="pub-content">
-                        <span class="text-bold">Xianyu Chen</span> and Ming Jiang,
-                        "<a href="http://ieeexplore.ieee.org/document/8550781/">Enhanced Adaptive Polar-Linear Interpolation Aided Channel Estimation</a>"
-                        <em>IEEE Wireless Communications Letters</em>, vol. 8, no. 3, pp. 693-696, June 2019.
-                        <div class="pub-links">
-                            <a href="paper/eapli-ce_v1.0b_final.pdf" target="_blank" class="pub-link">[PDF]</a>
-                        </div>
-                    </div>
-                </li>
-                <li class="pub-item">
-                    <div class="pub-badges">
-                        <span class="badge badge-journal">TSP 2017</span>
-                    </div>
-                    <div class="pub-content">
-                        <span class="text-bold">Xianyu Chen</span> and Ming Jiang,
-                        "<a href="http://ieeexplore.ieee.org/document/7747504/">Adaptive Statistical Bayesian MMSE Channel Estimation for Visible Light Communication</a>"
-                        <em>IEEE Transactions on Signal Processing</em>, vol. 65, no. 5, pp. 1287-1299, March 2017.
-                        <div class="pub-links">
-                            <a href="paper/as-bmmse-vlc_v0.10a_submitted.pdf" target="_blank" class="pub-link">[PDF]</a>
-                        </div>
-                    </div>
-                </li>
-            </ol>
-        </div>
-    </section>
-
-    <!-- Skills -->
-    <section id="skills" class="section-card">
-        <h2 class="section-title"><span class="section-num">04.</span> Skills</h2>
-        <div class="skills-grid">
-            <div class="skill-category">
-                <div class="skill-label">Programming</div>
-                <div class="skill-tags">
-                    <span class="skill-tag">Python</span>
-                    <span class="skill-tag">Matlab</span>
-                    <span class="skill-tag">JavaScript</span>
-                    <span class="skill-tag">HTML</span>
-                    <span class="skill-tag">C/C++</span>
-                    <span class="skill-tag">Linux Shell</span>
-                </div>
-            </div>
-            <div class="skill-category">
-                <div class="skill-label">Tools &amp; Frameworks</div>
-                <div class="skill-tags">
-                    <span class="skill-tag">PyTorch</span>
-                    <span class="skill-tag">TensorFlow</span>
-                    <span class="skill-tag">Keras</span>
-                    <span class="skill-tag">OpenCV</span>
-                    <span class="skill-tag">Unix/Linux</span>
-                    <span class="skill-tag">Git</span>
-                    <span class="skill-tag">Scikit-Learn</span>
-                    <span class="skill-tag">LaTeX</span>
-                </div>
-            </div>
-            <div class="skill-category">
-                <div class="skill-label">Mathematics</div>
-                <div class="skill-tags">
-                    <span class="skill-tag">Matrix Theory</span>
-                    <span class="skill-tag">Convex Optimization</span>
-                    <span class="skill-tag">Probability Theory</span>
-                    <span class="skill-tag">Information Theory</span>
-                    <span class="skill-tag">Numerical Computation</span>
-                    <span class="skill-tag">Stochastic Processes</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Achievements -->
-    <section id="contest-experience" class="section-card">
-        <h2 class="section-title"><span class="section-num">05.</span> Achievements</h2>
-        <table class="data-table" width="100%">
-            <tbody>
-                <tr>
-                    <td><span class="text-bold">The 2nd Prize</span> in Contemporary Undergraduate Mathematical Contest in Modeling (Leader, Top 8%)</td>
-                    <td class="date-cell">National, 2014</td>
-                </tr>
-                <tr>
-                    <td><span class="text-bold">Meritorious Winner</span> in Mathematical Contest in Modeling (Leader, Top 15%)</td>
-                    <td class="date-cell">International, 2013</td>
-                </tr>
-                <tr>
-                    <td><span class="text-bold">The 1st Prize</span> in Chinese Mathematics Competitions (8th in Guangdong Province)</td>
-                    <td class="date-cell">National, 2013</td>
-                </tr>
-                <tr>
-                    <td><span class="text-bold">The 2nd Prize</span> in National Undergraduate Electronics Design Contest</td>
-                    <td class="date-cell">Provincial, 2013</td>
-                </tr>
-                <tr>
-                    <td><span class="text-bold">The 3rd Prize</span> in Summer Camp of Undergraduate Mathematical Contest in Modeling (Leader, 4th in the contest)</td>
-                    <td class="date-cell">National, 2012</td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
-
-    <!-- Honors -->
-    <section id="honors" class="section-card">
-        <h2 class="section-title"><span class="section-num">06.</span> Honors</h2>
-        <table class="data-table" width="100%">
-            <tbody>
-                <tr>
-                    <td><span class="text-bold"><a href="https://cse.umn.edu/cs/news/xianyu-chen-earns-distinguished-dissertation-award" target="_blank">Distinguished Dissertation Award</a></span> (Mathematics, Physical Sciences, and Engineering category)</td>
-                    <td class="date-cell">University of Minnesota, 2026</td>
-                </tr>
-                <tr>
-                    <td>Outstanding Reviewers</td>
-                    <td class="date-cell">CVPR, 2026</td>
-                </tr>
-                <tr>
-                    <td>Outstanding Reviewers</td>
-                    <td class="date-cell">WACV, 2025</td>
-                </tr>
-                <tr>
-                    <td>College Science and Engineering Graduate Fellowships</td>
-                    <td class="date-cell">University of Minnesota, 2019, 2020</td>
-                </tr>
-                <tr>
-                    <td>National Scholarship</td>
-                    <td class="date-cell">Dept. of Education of China, 2013, 2017</td>
-                </tr>
-                <tr>
-                    <td>The 1st Prize of Outstanding Students Scholarships</td>
-                    <td class="date-cell">Sun Yat-sen Univ., 2013&ndash;2017</td>
-                </tr>
-                <tr>
-                    <td>Five Course Certificates of Deep Learning Specialization by Andrew Ng</td>
-                    <td class="date-cell">Coursera, 2017, 2018</td>
-                </tr>
-                <tr>
-                    <td>Outstanding Undergraduate Student Award</td>
-                    <td class="date-cell">Sun Yat-sen Univ., 2015</td>
-                </tr>
-                <tr>
-                    <td>Zhentai Scholarship</td>
-                    <td class="date-cell">Sun Yat-sen Univ., 2012</td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
-
-    <!-- Teaching Assistant -->
-    <section id="teaching-assistant" class="section-card">
-        <h2 class="section-title"><span class="section-num">07.</span> Teaching Assistant</h2>
-        <table class="data-table" width="100%">
-            <tbody>
-                <tr>
-                    <td>CSCI 5521: Machine Learning Fundamentals</td>
-                    <td class="date-cell">Spring 2024</td>
-                </tr>
-                <tr>
-                    <td>CSCI 5521: Machine Learning Fundamentals</td>
-                    <td class="date-cell">Fall 2023</td>
-                </tr>
-                <tr>
-                    <td>CSCI 2033: Linear Algebra</td>
-                    <td class="date-cell">Spring 2023</td>
-                </tr>
-                <tr>
-                    <td>CSCI 5521: Machine Learning Fundamentals</td>
-                    <td class="date-cell">Fall 2022</td>
-                </tr>
-                <tr>
-                    <td>CSCI 5302: Analysis of Numerical Algorithms</td>
-                    <td class="date-cell">Spring 2022</td>
-                </tr>
-                <tr>
-                    <td>CSCI 5521: Machine Learning Fundamentals</td>
-                    <td class="date-cell">Fall 2021</td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
-
-    <!-- Academic Services -->
-    <section id="academic-services" class="section-card">
-        <h2 class="section-title"><span class="section-num">08.</span> Academic Services</h2>
-        <h3 class="subsection-title">Journal Reviews:</h3>
-        <ul>
-            <li>IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI) (2023-now)</li>
-            <li>IEEE Transactions on Multimedia (TMM) (2023-now)</li>
-            <li>IEEE Transactions on Neural Networks and Learning Systems (TNNLS) (2023-now)</li>
-            <li>IEEE Transactions on Circuits and Systems for Video Technology (TCSVT) (2025-now)</li>
-            <li>ACM Transactions on Multimedia Computing Communications and Applications (TOMM) (2025-now)</li>
-            <li>IEEE Transactions on Image Processing (TIP) (2026-now)</li>
-            <li>Journal of Visual Communication and Image Representation (2021-now)</li>
-        </ul>
-        <h3 class="subsection-title">Conference Reviews:</h3>
-        <ul>
-            <li>International Conference on Computer Vision (ICCV'23, ICCV'25)</li>
-            <li>European Conference on Computer Vision (ECCV'22, ECCV'24, ECCV'26)</li>
-            <li>Conference on Computer Vision and Pattern Recognition (CVPR'22, CVPR'23, CVPR'25, CVPR'26)</li>
-            <li>Winter Conference on Applications of Computer Vision (WACV'22, WACV'23, WACV'24, WACV'25, WACV'26)</li>
-            <li>AAAI Conference on Artificial Intelligence (AAAI'23, AAAI'24, AAAI'25, AAAI'26, AAAI'27)</li>
-            <li>British Machine Vision Conference (BMVC'26)</li>
-        </ul>
-    </section>
-
-</div><!-- end layout-content -->
-
-<footer id="footer">
-    <div class="footer-inner">
-        <div id="clustrmaps-widget">
-            <script type="text/javascript" id="mapmyvisitors" src="//mapmyvisitors.com/map.js?d=LKGKk1GZKcsgDORO-jT8fedBgsMWe2Ur9vSBbYbM8KE&cl=ffffff&w=a"></script>
-        </div>
-        <div class="footer-copy">
-            <span>&copy; Xianyu Chen &nbsp;|&nbsp; Last updated: 23 August 2026</span>
-            <span class="footer-badge">// built with code</span>
-        </div>
+      </div>
     </div>
+<div class="award award-slim">
+  <span class="medal" aria-hidden="true"><svg class="i i-lg i-medal" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="9" r="6"/><path d="M8.5 14.2 7 22l5-3 5 3-1.5-7.8"/></svg></span>
+  <div class="award-text">
+    <p class="award-title">2026 Distinguished Dissertation Award, <span class="nw">University of Minnesota</span> · <span class="nw">one of two</span> university-wide</p>
+  </div>
+  <a class="award-link" href="dissertation.html">About the dissertation<svg class="i i-arrow" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+</div>
+  </div>
+</section>
+<section class="section" id="research" aria-labelledby="research-h">
+  <div class="wrap">
+    <div class="shead">
+      <h2 id="research-h">Research</h2>
+      <a class="more" href="publications.html">All publications<svg class="i i-arrow" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+    <p class="lede">My dissertation, <a href="dissertation.html"><cite>Building Human-Like Machine Intelligence</cite></a>, uses human visual attention (where people look, and in what order) in three steps: model it, align AI attention with it, and explain it.</p>
+    <ul class="hl">
+      <li class="card">
+        <div class="plate plate-fill"><picture><source type="image/webp" srcset="assets/img/hl-cvpr21-scanpath-vqa.webp 800w, assets/img/hl-cvpr21-scanpath-vqa@2x.webp 1600w" sizes="(min-width: 1168px) 266px, (min-width: 1024px) calc(25vw - 27px), (min-width: 560px) calc(50vw - 34px), calc(100vw - 32px)"><img src="assets/img/hl-cvpr21-scanpath-vqa.jpg" srcset="assets/img/hl-cvpr21-scanpath-vqa.jpg 800w, assets/img/hl-cvpr21-scanpath-vqa@2x.jpg 1600w" sizes="(min-width: 1168px) 266px, (min-width: 1024px) calc(25vw - 27px), (min-width: 560px) calc(50vw - 34px), calc(100vw - 32px)" width="800" height="500" alt="Photo of a woman holding a vase with the question &quot;Is the vase the same color as the scarf?&quot; and two scanpaths: one behind the correct answer &quot;no&quot;, one behind an incorrect answer." loading="lazy" decoding="async"></picture></div>
+        <div class="card-body">
+          <p class="card-k">Modeling</p>
+          <p class="chips"><span class="chip">CVPR 2021</span></p>
+          <h3><a href="https://openaccess.thecvf.com/content/CVPR2021/html/Chen_Predicting_Human_Scanpaths_in_Visual_Question_Answering_CVPR_2021_paper.html">Scanpaths in VQA</a></h3>
+          <p>The first model of human scanpaths in visual question answering, trained with reinforcement learning on whole gaze sequences.</p>
+          <ul class="links card-links"><li><a class="lk" href="https://github.com/chenxy99/Scanpaths">Code</a></li></ul>
+        </div>
+      </li>
+      <li class="card">
+        <div class="plate plate-fill"><picture><source type="image/webp" srcset="assets/img/hl-cvpr24-isp.webp 800w, assets/img/hl-cvpr24-isp@2x.webp 1600w" sizes="(min-width: 1168px) 266px, (min-width: 1024px) calc(25vw - 27px), (min-width: 560px) calc(50vw - 34px), calc(100vw - 32px)"><img src="assets/img/hl-cvpr24-isp.jpg" srcset="assets/img/hl-cvpr24-isp.jpg 800w, assets/img/hl-cvpr24-isp@2x.jpg 1600w" sizes="(min-width: 1168px) 266px, (min-width: 1024px) calc(25vw - 27px), (min-width: 560px) calc(50vw - 34px), calc(100vw - 32px)" width="800" height="500" alt="A beach photo and a roundabout photo, each shown three times with a different observer&#x27;s scanpath of numbered fixation circles." loading="lazy" decoding="async"></picture></div>
+        <div class="card-body">
+          <p class="card-k">Modeling</p>
+          <p class="chips"><span class="chip">CVPR 2024</span></p>
+          <h3><a href="https://openaccess.thecvf.com/content/CVPR2024/html/Chen_Beyond_Average_Individualized_Visual_Scanpath_Prediction_CVPR_2024_paper.html">Beyond Average</a></h3>
+          <p>Predicts how each individual viewer, not the average one, scans an image.</p>
+          <ul class="links card-links"><li><a class="lk" href="https://github.com/chenxy99/IndividualScanpath">Code</a></li></ul>
+        </div>
+      </li>
+      <li class="card">
+        <div class="plate plate-fill"><picture><source type="image/webp" srcset="assets/img/hl-cvpr22-visualhow.webp 800w, assets/img/hl-cvpr22-visualhow@2x.webp 1600w" sizes="(min-width: 1168px) 266px, (min-width: 1024px) calc(25vw - 27px), (min-width: 560px) calc(50vw - 34px), calc(100vw - 32px)"><img src="assets/img/hl-cvpr22-visualhow.jpg" srcset="assets/img/hl-cvpr22-visualhow.jpg 800w, assets/img/hl-cvpr22-visualhow@2x.jpg 1600w" sizes="(min-width: 1168px) 266px, (min-width: 1024px) calc(25vw - 27px), (min-width: 560px) calc(50vw - 34px), calc(100vw - 32px)" width="800" height="500" alt="The problem &quot;How to Involve a Pet in Christmas&quot; with two illustrated steps: an ornament with the pet&#x27;s picture, and a photo collage." loading="lazy" decoding="async"></picture></div>
+        <div class="card-body">
+          <p class="card-k">Alignment</p>
+          <p class="chips"><span class="chip">CVPR 2022 · Co-first</span><span class="chip">TPAMI 2024</span></p>
+          <h3><a href="https://openaccess.thecvf.com/content/CVPR2022/html/Yang_VisualHow_Multimodal_Problem_Solving_CVPR_2022_paper.html">VisualHow</a></h3>
+          <p>20K+ real-life problems with illustrated step-by-step solutions; supervising model attention with human attention improves solution prediction.</p>
+          <ul class="links card-links"><li><a class="lk" href="https://doi.org/10.1109/TPAMI.2024.3357631">TPAMI paper</a></li><li><a class="lk" href="https://github.com/chenxy99/SGAN">Code</a></li></ul>
+        </div>
+      </li>
+      <li class="card">
+        <div class="plate plate-fill"><picture><source type="image/webp" srcset="assets/img/hl-eccv24-gazexplain.webp 800w, assets/img/hl-eccv24-gazexplain@2x.webp 1600w" sizes="(min-width: 1168px) 266px, (min-width: 1024px) calc(25vw - 27px), (min-width: 560px) calc(50vw - 34px), calc(100vw - 32px)"><img src="assets/img/hl-eccv24-gazexplain.jpg" srcset="assets/img/hl-eccv24-gazexplain.jpg 800w, assets/img/hl-eccv24-gazexplain@2x.jpg 1600w" sizes="(min-width: 1168px) 266px, (min-width: 1024px) calc(25vw - 27px), (min-width: 560px) calc(50vw - 34px), calc(100vw - 32px)" width="800" height="500" alt="Street photo with a scanpath of circled fixations joined by arrows; speech bubbles explain two fixations: &quot;There is a person standing on the sidewalk&quot; and &quot;There is a person walking on the sidewalk&quot;." loading="lazy" decoding="async"></picture></div>
+        <div class="card-body">
+          <p class="card-k">Explainability</p>
+          <p class="chips"><span class="chip">ECCV 2024</span><span class="chip chip-fix">Oral · top 2.3%</span></p>
+          <h3><a href="https://www.ecva.net/papers/eccv_2024/papers_ECCV/html/1308_ECCV_2024_paper.php">GazeXplain</a></h3>
+          <p>Predicts where people look and describes, in words, what each fixation looks at.</p>
+          <ul class="links card-links"><li><a class="lk" href="https://github.com/chenxy99/GazeXplain">Code</a></li></ul>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+<section class="section" id="experience" aria-labelledby="experience-h">
+  <div class="wrap">
+    <div class="shead">
+      <h2 id="experience-h">Experience</h2>
+      <a class="more" href="cv_Xianyu.pdf">Full CV<span class="vh"> (PDF)</span><svg class="i i-arrow" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+    <ol class="tl">
+      <li class="now">
+        <p class="tl-date">Oct 2025 – Present</p>
+        <span class="tl-node" aria-hidden="true"><span></span></span>
+        <div class="tl-body">
+          <h3>Fasikl Inc. <span class="tl-role">· Research Scientist – AI (intern 2023–2025)</span></h3>
+          <p class="note">Co-author of <a href="publications.html#J9">SARM&nbsp;(IEEE&nbsp;TBME&nbsp;2026)</a>; co-inventor on two patent applications for closed-loop stimulation control.</p>
+        </div>
+      </li>
+      <li>
+        <p class="tl-date">Sep 2019 – Dec 2025</p>
+        <span class="tl-node" aria-hidden="true"><span></span></span>
+        <div class="tl-body">
+          <h3>University of Minnesota <span class="tl-role">· Ph.D. in Computer Science</span></h3>
+          <p class="note">Advisor: <a href="https://www-users.cse.umn.edu/~qzhao/">Prof. Catherine Qi Zhao</a>. Doctoral research 2019–2024.</p>
+        </div>
+      </li>
+      <li>
+        <p class="tl-date">Summer 2019</p>
+        <span class="tl-node" aria-hidden="true"><span></span></span>
+        <div class="tl-body">
+          <h3>Tencent AI Lab <span class="tl-role">· Research Intern</span></h3>
+        </div>
+      </li>
+      <li>
+        <p class="tl-date">Aug – Dec 2018</p>
+        <span class="tl-node" aria-hidden="true"><span></span></span>
+        <div class="tl-body">
+          <h3>Shenzhen Institutes of Advanced Technology, Chinese Academy of Sciences <span class="tl-role">· Research Intern</span></h3>
+          <p class="note">Few-shot object detection (<a href="publications.html#J6">IEEE TIP 2020</a>, <a href="publications.html#C5">AAAI 2020</a>).</p>
+        </div>
+      </li>
+      <li>
+        <p class="tl-date">Sep 2011 – Jun 2018</p>
+        <span class="tl-node" aria-hidden="true"><span></span></span>
+        <div class="tl-body">
+          <h3>Sun Yat-sen University <span class="tl-role">· M.E. and B.E.</span></h3>
+          <p class="note">Statistical signal processing for wireless and visible light communication (<a href="publications.html#J1">IEEE TSP 2017</a>, <a href="publications.html#J5">IEEE&nbsp;WCL&nbsp;2019</a>).</p>
+        </div>
+      </li>
+    </ol>
+  </div>
+</section>
+<section class="section" id="honors" aria-labelledby="honors-h">
+  <div class="wrap">
+    <div class="shead">
+      <h2 id="honors-h">Honors</h2>
+    </div>
+    <ul class="hlist hlist-home"><li><span class="yr">2026</span><div><p><a href="https://grad.umn.edu/news-events/news-overview/announcing-2026-graduate-school-best-dissertation-award-winners">Distinguished Dissertation Award</a>, University of Minnesota; University nominee for the CGS/ProQuest Distinguished Dissertation Award</p></div></li><li><span class="yr">2025, 2026</span><div><p>Outstanding Reviewer, WACV 2025 and CVPR 2026</p></div></li><li><span class="yr">2019, 2020</span><div><p>College of Science and Engineering Graduate Fellowship, University of Minnesota</p></div></li><li><span class="yr">2013, 2017</span><div><p>National Scholarship, Ministry of Education of China</p></div></li></ul>
+    <p class="svc-line"><b>Service</b> · Reviewer for CVPR, ICCV, ECCV, AAAI, WACV and BMVC, and for IEEE TPAMI, TIP, TNNLS, TMM, TCSVT and ACM TOMM.</p>
+  </div>
+</section>
+<section class="section section-contact" id="contact" aria-labelledby="contact-h">
+  <div class="wrap">
+    <div class="shead">
+      <h2 id="contact-h">Contact</h2>
+    </div>
+    <dl class="contact">
+      <div class="c-row">
+        <dt>Email</dt>
+        <dd class="c-email-dd"><a class="c-email" id="email-addr" href="mailto:xianyuchen1992&#64;gmail.com">xianyuchen1992&#64;gmail.com</a>
+          <button type="button" class="copy copy-in js-only" data-copy="email-addr" aria-label="Copy email address"><svg class="i i-copy" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg>Copy</button></dd>
+      </div>
+      <div class="c-row">
+        <dt>Profiles</dt>
+        <dd><ul class="c-links"><li><a href="https://scholar.google.com/citations?user=gjH1-CcAAAAJ&amp;hl=en" rel="me">Google Scholar<svg class="i i-ext" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 17 17 7M8 7h9v9"/></svg></a></li><li><a href="https://www.semanticscholar.org/author/3392059" rel="me">Semantic Scholar<svg class="i i-ext" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 17 17 7M8 7h9v9"/></svg></a></li><li><a href="https://orcid.org/0000-0002-9027-3920" rel="me">ORCID<svg class="i i-ext" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 17 17 7M8 7h9v9"/></svg></a></li><li><a href="https://github.com/chenxy99" rel="me">GitHub<svg class="i i-ext" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 17 17 7M8 7h9v9"/></svg></a></li><li><a href="https://www.linkedin.com/in/xianyu-chen-a27354163/" rel="me">LinkedIn<svg class="i i-ext" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 17 17 7M8 7h9v9"/></svg></a></li></ul></dd>
+      </div>
+      <div class="c-row c-row-bio">
+        <dt>Short bio</dt>
+        <dd>
+          <details class="bio">
+            <summary>For talks and introductions<svg class="i i-chev" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></summary>
+            <div class="bio-box">
+              <p id="short-bio">Xianyu Chen is an AI Research Scientist at Fasikl. He received his Ph.D. in Computer Science from the University of Minnesota in 2025, advised by Prof. Catherine Qi Zhao. His research uses human visual attention to build multimodal AI that reasons and explains more like people, with papers at CVPR, ECCV (Oral), IJCAI and IEEE TPAMI. His dissertation received the University of Minnesota's 2026 Distinguished Dissertation Award.</p>
+              <button type="button" class="copy js-only" data-copy="short-bio"><svg class="i i-copy" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg>Copy bio</button>
+            </div>
+          </details>
+        </dd>
+      </div>
+    </dl>
+  </div>
+</section>
+</main>
+<footer class="foot">
+  <div class="wrap">
+    <div class="visitor-map" role="region" aria-label="Visitor map"><div id="mmv-slot"></div></div>
+    <div class="foot-row">
+      <p class="foot-meta">© 2026 Xianyu Chen · Last updated October 2026<span class="print-only"> · chenxy99.github.io</span></p>
+      <fieldset class="theme-pick js-only"><legend>Theme</legend><div class="seg"><label><input type="radio" name="theme" value="auto" checked><span>Auto</span></label><label><input type="radio" name="theme" value="light"><span>Light</span></label><label><input type="radio" name="theme" value="dark"><span>Dark</span></label></div></fieldset>
+    </div>
+  </div>
 </footer>
-
+<div class="vh" id="status" role="status" aria-live="polite"></div>
 <script>
-// Smooth scrolling
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-            e.preventDefault();
-            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
-    });
-});
-
-// Active nav on scroll
-const sections = document.querySelectorAll('section[id]');
-const navLinks = document.querySelectorAll('#navbar .nav-links a');
-window.addEventListener('scroll', () => {
-    let current = '';
-    sections.forEach(s => {
-        if (window.scrollY >= s.offsetTop - 80) current = s.getAttribute('id');
-    });
-    navLinks.forEach(link => {
-        link.classList.toggle('active', link.getAttribute('href') === '#' + current);
-    });
-});
+/* MapMyVisitors: always load the light map (exactly one #mapmyvisitors). Dark mode inverts it in CSS, so switching
+   themes needs no reload; every reload of the widget would count as an extra visit. */
+(function () {
+  function add() {
+    var slot = document.getElementById('mmv-slot');
+    if (!slot || document.getElementById('mapmyvisitors')) return;
+    var s = document.createElement('script');
+    s.id = 'mapmyvisitors';
+    s.async = true;
+    s.src = 'https://mapmyvisitors.com/map.js?d=LKGKk1GZKcsgDORO-jT8fedBgsMWe2Ur9vSBbYbM8KE&w=a&co=eef1f6&cl=c9d1e0&ct=3b4456';
+    slot.appendChild(s);
+  }
+  if (document.readyState === 'complete') add(); else window.addEventListener('load', add);
+})();
 </script>
-
 </body>
 </html>

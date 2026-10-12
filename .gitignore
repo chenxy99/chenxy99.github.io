@@ -1,0 +1,14 @@
+# Everything committed here is published on https://chenxy99.github.io
+
+# Local LaTeX sources for the CV and resume (compile on Overleaf; publish only the PDFs)
+overleaf/
+
+# PDFs in paper/ stay local by default: the dissertation (the site links the UMN
+# Conservancy copy, https://hdl.handle.net/11299/279218) and publisher (IEEE Xplore)
+# versions, which may not be redistributed. The author manuscripts already in git
+# stay tracked; to publish another author manuscript, use: git add -f paper/<file>.pdf
+paper/*.pdf
+
+# Editor and OS files
+.idea/
+.DS_Store

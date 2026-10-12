@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Building Human-Like Machine Intelligence · Xianyu Chen</title>
+<meta name="description" content="Ph.D. dissertation by Xianyu Chen (University of Minnesota, 2025) on human visual attention for AI: Modeling, Alignment and Explainability. 2026 Distinguished Dissertation Award.">
+<link rel="canonical" href="https://chenxy99.github.io/dissertation.html">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#F8F9FB" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0B0F17" media="(prefers-color-scheme: dark)">
+<script>(function(d){d.classList.add('js');try{var t=localStorage.getItem('theme');if(t==='light'||t==='dark'){d.setAttribute('data-theme',t);var c=t==='dark'?'#0B0F17':'#F8F9FB',m=document.querySelectorAll('meta[name="theme-color"]');for(var i=0;i<m.length;i++)m[i].setAttribute('content',c);}}catch(e){}})(document.documentElement);</script>
+<link rel="preload" href="assets/fonts/geist-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/geist-mono-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/site.css">
+<link rel="icon" href="assets/img/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<meta property="og:site_name" content="Xianyu Chen">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Building Human-Like Machine Intelligence · Ph.D. dissertation of Xianyu Chen">
+<meta property="og:description" content="Ph.D. dissertation by Xianyu Chen (University of Minnesota, 2025) on human visual attention for AI: Modeling, Alignment and Explainability. 2026 Distinguished Dissertation Award.">
+<meta property="og:url" content="https://chenxy99.github.io/dissertation.html">
+<meta property="og:image" content="https://chenxy99.github.io/assets/img/og-1200x630.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Xianyu Chen, AI Research Scientist at Fasikl; 2026 Distinguished Dissertation Award, University of Minnesota">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Building Human-Like Machine Intelligence · Ph.D. dissertation of Xianyu Chen">
+<meta name="twitter:description" content="Ph.D. dissertation by Xianyu Chen (University of Minnesota, 2025) on human visual attention for AI: Modeling, Alignment and Explainability. 2026 Distinguished Dissertation Award.">
+<meta name="twitter:image" content="https://chenxy99.github.io/assets/img/og-1200x630.jpg">
+<meta name="twitter:image:alt" content="Xianyu Chen, AI Research Scientist at Fasikl; 2026 Distinguished Dissertation Award, University of Minnesota">
+<meta name="citation_title" content="Building Human-Like Machine Intelligence: Advancing Attention by Modeling, Alignment, and Explainability">
+<meta name="citation_author" content="Chen, Xianyu">
+<meta name="citation_publication_date" content="2025/11">
+<meta name="citation_dissertation_institution" content="University of Minnesota">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Thesis",
+  "@id": "https://chenxy99.github.io/dissertation.html#thesis",
+  "name": "Building Human-Like Machine Intelligence: Advancing Attention by Modeling, Alignment, and Explainability",
+  "author": {
+    "@type": "Person",
+    "@id": "https://chenxy99.github.io/#person",
+    "name": "Xianyu Chen",
+    "url": "https://chenxy99.github.io/"
+  },
+  "inSupportOf": "Ph.D. in Computer Science",
+  "datePublished": "2025-11",
+  "inLanguage": "en",
+  "isAccessibleForFree": true,
+  "sourceOrganization": {
+    "@type": "CollegeOrUniversity",
+    "name": "University of Minnesota"
+  },
+  "url": "https://hdl.handle.net/11299/279218",
+  "mainEntityOfPage": "https://chenxy99.github.io/dissertation.html",
+  "description": "AI systems can describe images and answer questions about them, yet they still struggle to reason step by step through real-world problems and to justify their answers. This dissertation uses human visual attention (where people look, and in what order) as a bridge between perception and reasoning, in three parts: Modeling, Alignment and Explainability.",
+  "award": "Distinguished Dissertation Award, University of Minnesota Graduate School (Mathematics, Physical Sciences & Engineering), 2026"
+}
+</script>
+<script src="assets/js/site.js" defer></script>
+</head>
+<body class="page-diss">
+<a class="skip" href="#main">Skip to content</a>
+<header class="bar">
+  <div class="wrap bar-in">
+    <a class="brand" href="./"><svg class="mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path class="mk-line" d="M9.5 18.7 27 9.2"/><circle class="mk-a" cx="9.5" cy="18.7" r="6.75"/><circle class="mk-b" cx="27" cy="9.2" r="4"/></svg><span>Xianyu Chen</span></a>
+    <nav class="nav" aria-label="Main"><a href="./#research">Research</a><a href="publications.html">Publications</a><a href="./#experience">Experience</a><a href="dissertation.html" aria-current="page">Dissertation</a><a href="cv_Xianyu.pdf">CV<span class="vh"> (PDF)</span></a><a href="./#contact">Contact</a></nav>
+    <div class="bar-actions">
+      <button class="icon-btn theme-toggle" type="button" aria-label="Switch color theme"><svg class="i i-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg><svg class="i i-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></button>
+      <details class="menu">
+        <summary class="icon-btn"><span class="vh">Menu</span><svg class="i i-menu" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 7h16M4 12h16M4 17h16"/></svg><svg class="i i-close" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6 6 18"/></svg></summary>
+        <nav class="menu-panel" aria-label="Site menu"><a href="./#research">Research</a><a href="publications.html">Publications</a><a href="./#experience">Experience</a><a href="dissertation.html" aria-current="page">Dissertation</a><a href="cv_Xianyu.pdf">CV<span class="vh"> (PDF)</span></a><a href="./#contact">Contact</a></nav>
+      </details>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article class="diss">
+  <div class="wrap wrap-narrow">
+    <header class="page-head">
+      <p class="eyebrow">Ph.D. dissertation · University of Minnesota · 2025</p>
+      <h1 class="diss-title">Building Human-Like Machine Intelligence: Advancing Attention by Modeling, Alignment, and Explainability</h1>
+      <div class="award">
+        <span class="medal" aria-hidden="true"><svg class="i i-lg i-medal" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="9" r="6"/><path d="M8.5 14.2 7 22l5-3 5 3-1.5-7.8"/></svg></span>
+        <div class="award-text">
+          <p class="award-title">2026 Distinguished Dissertation Award · University of Minnesota</p>
+          <p class="award-sub">One of two recipients university-wide · University nominee for the CGS/ProQuest Distinguished Dissertation Award</p>
+        </div>
+        <p class="award-links"><a href="https://grad.umn.edu/news-events/news-overview/announcing-2026-graduate-school-best-dissertation-award-winners">UMN Graduate School</a><a href="https://cse.umn.edu/cs/news/xianyu-chen-earns-distinguished-dissertation-award">UMN CS&amp;E</a></p>
+      </div>
+      <p class="diss-meta"><a href="./">Xianyu Chen</a> · Advisor: <a href="https://www-users.cse.umn.edu/~qzhao/">Prof. Catherine Qi Zhao</a></p>
+      <div class="actions">
+        <a class="btn btn-primary btn-long" href="https://hdl.handle.net/11299/279218">Read the full text (open access)<svg class="i i-arrow" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn" href="#cite">Cite</a>
+      </div>
+    </header>
+    <section class="dsec" id="summary" aria-labelledby="summary-h">
+      <h2 id="summary-h">Summary</h2>
+      <p class="summary">AI systems can describe images and answer questions about them, yet they still struggle to reason step by step through real-world problems and to justify their answers. This dissertation uses human visual attention (where people look, and in what order) as a bridge between perception and reasoning, in three parts: Modeling, Alignment and Explainability.</p>
+      <figure class="diss-fig"><picture><source type="image/webp" srcset="assets/img/teasers/phd25-dissertation-mosaic-480.webp 480w, assets/img/teasers/phd25-dissertation-mosaic.webp 960w" sizes="(min-width: 840px) 800px, calc(100vw - 32px)"><img src="assets/img/teasers/phd25-dissertation-mosaic.jpg" srcset="assets/img/teasers/phd25-dissertation-mosaic-480.jpg 480w, assets/img/teasers/phd25-dissertation-mosaic.jpg 960w" sizes="(min-width: 840px) 800px, calc(100vw - 32px)" width="960" height="600" alt="Four figures from the dissertation&#x27;s chapters: VQA scanpaths, individual observers&#x27; scanpaths, an illustrated VisualHow problem, and fixation explanations." loading="lazy" decoding="async"></picture><figcaption>Figures from Chapters 2, 3, 4 and 6.</figcaption></figure>
+    </section>
+    <section class="dsec" id="contents" aria-labelledby="contents-h">
+      <h2 id="contents-h">Contents</h2>
+      <p class="toc-lead">Chapters 2–6 appeared as the papers below.</p>
+      <ol class="toc">
+      <li class="part">
+        <h3 class="part-h"><span class="roman">I.</span> Modeling</h3>
+        <p class="part-q">Predict how people move their eyes during a task, and how each person differs.</p>
+        <ol class="chs"><li><a href="https://openaccess.thecvf.com/content/CVPR2021/html/Chen_Predicting_Human_Scanpaths_in_Visual_Question_Answering_CVPR_2021_paper.html"><span class="ch">Ch. 2</span><span class="t">Predicting Human Scanpaths in Visual Question Answering</span><span class="lead" aria-hidden="true"></span><span class="v">CVPR 2021</span></a></li><li><a href="https://openaccess.thecvf.com/content/CVPR2024/html/Chen_Beyond_Average_Individualized_Visual_Scanpath_Prediction_CVPR_2024_paper.html"><span class="ch">Ch. 3</span><span class="t">Beyond Average: Individualized Visual Scanpath Prediction</span><span class="lead" aria-hidden="true"></span><span class="v">CVPR 2024</span></a></li></ol>
+      </li>
+      <li class="part">
+        <h3 class="part-h"><span class="roman">II.</span> Alignment</h3>
+        <p class="part-q">Align machine attention with human attention, improving step-by-step problem solving.</p>
+        <ol class="chs"><li><a href="https://openaccess.thecvf.com/content/CVPR2022/html/Yang_VisualHow_Multimodal_Problem_Solving_CVPR_2022_paper.html"><span class="ch">Ch. 4</span><span class="t">VisualHow: Multimodal Problem Solving</span><span class="lead" aria-hidden="true"></span><span class="v">CVPR 2022</span></a></li><li><a href="https://doi.org/10.1109/TPAMI.2024.3357631"><span class="ch">Ch. 5</span><span class="t">Every Problem, Every Step, All in Focus</span><span class="lead" aria-hidden="true"></span><span class="v">TPAMI 2024</span></a></li></ol>
+      </li>
+      <li class="part">
+        <h3 class="part-h"><span class="roman">III.</span> Explainability</h3>
+        <p class="part-q">Predict where people look and explain in plain language what each fixation looks at.</p>
+        <ol class="chs"><li><a href="https://www.ecva.net/papers/eccv_2024/papers_ECCV/html/1308_ECCV_2024_paper.php"><span class="ch">Ch. 6</span><span class="t">GazeXplain: Learning to Predict Natural Language Explanations of Visual Scanpaths</span><span class="lead" aria-hidden="true"></span><span class="v">ECCV 2024 · Oral</span></a></li></ol>
+      </li>
+      </ol>
+    </section>
+    <section class="dsec" id="cite" aria-labelledby="cite-h">
+      <h2 id="cite-h">Cite</h2>
+      <div class="bib-box bib-open"><pre id="diss-bib"><code>@phdthesis{chen2025building,
+  title  = {Building Human-Like Machine Intelligence: Advancing Attention by Modeling, Alignment, and Explainability},
+  author = {Chen, Xianyu},
+  school = {University of Minnesota},
+  year   = {2025},
+  month  = nov,
+  url    = {https://hdl.handle.net/11299/279218}
+}</code></pre><button type="button" class="copy js-only" data-copy="diss-bib"><svg class="i i-copy" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg>Copy BibTeX</button></div>
+    </section>
+  </div>
+</article>
+</main>
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-row">
+      <p class="foot-meta">© 2026 Xianyu Chen · Last updated October 2026<span class="print-only"> · chenxy99.github.io</span></p>
+      <fieldset class="theme-pick js-only"><legend>Theme</legend><div class="seg"><label><input type="radio" name="theme" value="auto" checked><span>Auto</span></label><label><input type="radio" name="theme" value="light"><span>Light</span></label><label><input type="radio" name="theme" value="dark"><span>Dark</span></label></div></fieldset>
+    </div>
+  </div>
+</footer>
+<div class="vh" id="status" role="status" aria-live="polite"></div>
+</body>
+</html>
